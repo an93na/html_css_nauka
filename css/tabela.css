@@ -58,7 +58,10 @@ tr:hover > td:nth-last-child(1)
 h1 {
     font-family: Roboto Mono;
 }
-
+.zajawki {
+    display: flex;
+    flex-wrap: wrap;
+}
 .zajawka {
     background-image: url(../img/mapa.png);
     width: 300px;
