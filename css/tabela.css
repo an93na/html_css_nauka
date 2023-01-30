@@ -60,28 +60,62 @@ h1 {
 }
 
 .zajawka {
-    background-image: url(../img/1.jpg);
+    background-image: url(../img/mapa.png);
     width: 300px;
     height: 200px;
+    position: relative;
+    background-repeat-x: no-repeat;
+    width: 100%px;
+    background-size: 100% auto;
+    background-repeat-y: no-repeat;
+    background-position: center;
+    margin: 20px;
 }
-.zajawka_nadtytul {
+.zajawka__koty{
+    background-image: url(../img/1.jpg);
+    background-repeat-x: no-repeat;
+    width: 100%px;
+    background-size: 100% auto;
+    background-repeat-y: no-repeat;
+    background-position: center;
+    margin: 20px;
+}
+.zajawka--nadtytul {
     background-color: rgb(139, 23, 23);
     color: white;
     padding: 10px;
-    width: 50%;
+    width: 39%;
+    position:absolute
 
 }
-.zajawka_tytul {
+.zajawka--tytul {
 font-size: 16pt;
 font-weight: bold;
 color: black;
 text-decoration: none;
+position:absolute;
+top: 131px;
+left: 5px;
 }
-.zajawka_tytul:hover {
+
+.zajawka--tytul__odmiana {
+    color: rgb(255, 0, 0);
+    }
+
+.zajawka--tytul:hover {
     text-decoration: underline;
     cursor: pointer;
     color: black;
     }
-.zajawka_lead {
-
+.zajawka--lead {
+    font-size: 12pt;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position:absolute;
+    bottom: 2px;
+    left: 2px;
+    margin: 0px;
 }
