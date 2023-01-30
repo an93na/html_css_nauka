@@ -1,0 +1,60 @@
+*{  font-family: Roboto Mono;
+    box-sizing: border-box;
+}
+table {
+width: 100%;
+border: 1px solid red;
+border-collapse: collapse;
+}
+th, td {
+    border: 1px solid red;
+    text-align: left;
+    padding: 10px;
+    font-weight: normal;
+}
+td {
+    height: 50px;
+}
+tr {
+    background-color: bisque;
+}
+
+.naglowek {
+    background-color: rgb(82, 16, 21);
+    color: white;
+}
+caption {
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 10px;
+    font-size: 18px;
+    background-image: url('../img/mapa.png');
+    height: 100px;
+}
+tbody > tr:nth-child(odd) {
+    background-color: rgb(140, 173, 173);
+}
+tbody > tr:hover
+{
+    background-color: rgb(173, 127, 127);
+    font-size: 18px;
+    font-weight: bold;
+}
+th.m {
+    width: 150px;
+}
+th.st {
+    width: 50px;
+}
+td:nth-last-child(1) {
+    background-color: red;
+}
+tr:hover > td:nth-last-child(1)
+{
+    background-color: rgb(173, 127, 127);
+
+}
+h1 {
+    font-family: Roboto Mono;
+}
