@@ -61,6 +61,12 @@ h1 {
 .zajawki {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: zajawkistart / zajawkistop;
+    grid-row: dolstart / dolstop;
 }
 .zajawka {
     background-image: url(../img/mapa.png);
@@ -125,6 +131,15 @@ left: 5px;
 }
 .maingrid {
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    grid-template-columns: [lewastart] 100px [lewastop zajawkistart] auto [prawastart zajawkistop] 200px [prawastop];
+    grid-template-rows:    [gora] 100px [gorastop dolstart] auto [dolstop artykulstart] auto [artykulstop];
+}
+.belkagorna {
+    background-color: green;
+    grid-column: lewastart / prawastop;
+    grid-row: gora / gorastop;
+}
+.artykuly {
+    grid-column: zajawkistart / zajawkistop;
+    grid-row: artykulstart / artykulstop;
 }
