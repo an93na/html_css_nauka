@@ -1,0 +1,12 @@
+table {
+    width: 600px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+caption {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
