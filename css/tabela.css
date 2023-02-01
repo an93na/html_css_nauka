@@ -148,13 +148,22 @@ left: 5px;
     grid-row: dolstart / artykulstop;*/
     background-color: bisque;
     position: fixed;
-    height: 100px;
+    /*height: 100px;*/
     width: 180px;
     top: 100px;
     right: 10px;
 } 
-[id="temp"]{
+.menu > a {
     color: black;
     text-decoration: none;
-    cursor: grab;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.menu > a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    padding: 0px;
+    margin-bottom: 30px;
 }
