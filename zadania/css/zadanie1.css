@@ -46,5 +46,41 @@ tr > td:hover {
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
-
-  }
+}
+.kropka
+{
+    width: 10px;
+    height: 10px;
+    background-color: magenta;
+    position: relative;
+    bottom: 134px;
+    left: 341px;
+}
+.kropka2
+{
+    width: 10px;
+    height: 10px;
+    background-color: magenta;
+    position: relative;
+    bottom: 144px;
+    left: 423px;
+}
+.kropka3
+{
+    width: 10px;
+    height: 10px;
+    background-color: magenta;
+    position: relative;
+    bottom: 232px;
+    left: 263px;
+}
+.kolko
+{
+    width: 30px;
+    height: 30px;
+    background-color:rgba(155, 136, 237, 0.5);
+    position: relative;
+    bottom: 163px;
+    left: 27px;
+    border-radius: 50%;
+}
