@@ -29,3 +29,22 @@ tr > td:hover {
 *{
     box-sizing: border-box;
 }
+.container {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 595px;
+  }
+  .container div{
+    margin: 10px;
+    padding: 20px;
+  }
+  [id="1"] {
+    background-color: black;
+    color: white;
+    width: 595px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+
+  }
