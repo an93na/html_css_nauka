@@ -1,0 +1,58 @@
+.maingrid {
+    display: grid;
+    grid-template-columns: [lewa1] 100px [lewa2 srodek] auto [prawa2 prawa];
+    grid-template-rows:    [w0] 50px[wt wd] auto [w1] auto [w2] auto [w3] auto [w4] auto [w5] auto [w6] auto [w7];
+}
+[id="1"] {
+    grid-column: lewa1 / lewa2;
+    grid-row: w0/ wt;
+}
+
+.container {
+    display: flex;
+    grid-column: srodek / prawa2;
+    grid-row: wd / w1;
+}
+.container--pierwsze {
+    display: flex;
+    grid-column: srodek / prawa2;
+    grid-row: w1 / w2;
+}
+.container--drugie {
+    display: flex;
+    grid-column: srodek / prawa2;
+    grid-row:  w2 / w3;
+}
+.container--trzecie {
+    display: flex;
+    grid-column: srodek / prawa2;
+    grid-row: w3 / w4;
+}
+.container--czwarte {
+    display: flex;
+    grid-column: srodek / prawa2;
+    grid-row: w4 / w5;
+}
+.container--piate {
+    display: flex;
+    grid-column: srodek / prawa2;
+    grid-row: w5 / w6;
+}
+.container div {
+    flex: 1 0 50px;
+}
+.container--pierwsze div {
+    flex: 1 0 50px;
+}
+.container--drugie div {
+    flex: 1 0 50px;
+}
+.container--trzecie div {
+    flex: 1 0 50px;
+}
+.container--czwarte div {
+    flex: 1 0 50px;
+}
+.container--piate div {
+    flex: 1 0 50px;
+}
