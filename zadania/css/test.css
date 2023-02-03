@@ -1,0 +1,24 @@
+* {box-sizing: border-box;}
+
+.tabelka {
+width: 500px;
+}
+.dni {
+    font-weight: bold;
+}
+.container {
+    display: flex;
+}
+.container div {
+    flex: 1 0 50px;
+    position: relative;
+}
+[id="august"] {
+    display: flex;
+}
+.kropka
+{
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+}
