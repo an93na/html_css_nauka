@@ -2,12 +2,16 @@
 
 .tabelka {
 width: 500px;
+background-color: black;
 }
 .dni {
     font-weight: bold;
 }
 .container {
     display: flex;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
 }
 .container div {
     flex: 1 0 50px;
@@ -15,10 +19,18 @@ width: 500px;
 }
 [id="august"] {
     display: flex;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
 }
 .kropka
 {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.5);
     position: absolute;
     border-radius: 50%;
+    width: 25px;
+    height: 25px;
 }
