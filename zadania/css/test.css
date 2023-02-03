@@ -16,6 +16,8 @@ background-color: black;
 .container div {
     flex: 1 0 50px;
     position: relative;
+    padding: 10px;
+    
 }
 [id="august"] {
     display: flex;
@@ -26,11 +28,13 @@ background-color: black;
     background-color: black;
     font-size: 20px;
 }
-.kropka
+div .kropka
 {
     background-color: rgba(0, 0, 255, 0.5);
     position: absolute;
     border-radius: 50%;
     width: 25px;
     height: 25px;
+    top: 0px;
+    left: 0px;
 }
