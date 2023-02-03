@@ -1,58 +1,22 @@
 .maingrid {
     display: grid;
-    grid-template-columns: [lewa1] 1fr 1fr 1fr 1fr 1fr 1fr 1fr [prawa];
-    grid-template-rows:    [w0] 50px[wt wd] auto [w1] auto [w2] auto [w3] auto [w4] auto [w5] auto [w6] auto [w7];
+    grid-template-columns: [lewa1] repeat(7, 1fr) [prawa];
+    grid-template-rows:    [w0] repeat(6, 1fr) [w7];
 }
 [id="1"] {
     grid-column: lewa1 / prawa;
-    grid-row: w0/ wt;
+    grid-row: w0/ 1;
+}
+.th {
+    display: grid;
+    grid-template-columns: [lewa1] repeat(7, 1fr) [prawa];
+    grid-template-rows:    [w0] repeat(6, 1fr) [w7];
+}
+.wazny {
+ order: -1;
 }
 
-.container {
-   
-    grid-column: srodek / prawa2;
-    grid-row: wd / w1;
-}
-.container--pierwsze {
-   
-    grid-column: srodek / prawa2;
-    grid-row: w1 / w2;
-}
-.container--drugie {
-
-    grid-column: srodek / prawa2;
-    grid-row:  w2 / w3;
-}
-.container--trzecie {
-
-    grid-column: srodek / prawa2;
-    grid-row: w3 / w4;
-}
-.container--czwarte {
-    
-    grid-column: srodek / prawa2;
-    grid-row: w4 / w5;
-}
-.container--piate {
-    display: flex;
-    grid-column: srodek / prawa2;
-    grid-row: w5 / w6;
-}
-.container div {
-    flex: 1 0 50px;
-}
-.container--pierwsze div {
-    flex: 1 0 50px;
-}
-.container--drugie div {
-    flex: 1 0 50px;
-}
-.container--trzecie div {
-    flex: 1 0 50px;
-}
-.container--czwarte div {
-    flex: 1 0 50px;
-}
-.container--piate div {
-    flex: 1 0 50px;
+.Sa {
+    grid-column: 6 / 7;
+    grid-row: 7 / 8;
 }
