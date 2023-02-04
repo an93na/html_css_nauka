@@ -1,0 +1,19 @@
+* {border-collapse: collapse;}
+.message {
+    background-color: rgb(73, 65, 65);
+    width: 600px; 
+}
+.message--1wiersz {
+    display: flex;
+}
+.message--1wiersz img {
+    flex: auto;
+    padding: 10px;
+    margin: 10px;
+
+}
+.message--1wiersz div {
+    margin-left: 60px;
+    padding: 10px;
+
+}
