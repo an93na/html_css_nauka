@@ -2,6 +2,7 @@
 .message {
     background-color: rgb(73, 65, 65);
     width: 600px; 
+    height: 380px;
     border:  1px solid darkblue;
     border-radius: 5%;
 }
@@ -21,6 +22,7 @@
 }
 .message--2wiersz {
     width: 600px;
+    height: 200px;
     display: flex;
     background-color: rgb(73, 65, 65);
 }
@@ -33,6 +35,7 @@
 }
 .message--3wiersz {
     display: flex;
+    
 }
 .message--3wiersz  img {
     flex: auto;
