@@ -17,3 +17,15 @@
     padding: 10px;
 
 }
+.message--2wiersz {
+    width: 600px;
+    display: flex;
+    background-color: rgb(73, 65, 65);
+}
+.message--2wiersz__text {
+    flex: auto;
+    background-color: rgb(73, 65, 65);
+    color: antiquewhite;
+    font-size: 20px;
+    padding: 10px;
+}
