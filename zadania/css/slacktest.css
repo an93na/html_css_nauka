@@ -2,7 +2,7 @@
 .message {
     background-color: rgb(73, 65, 65);
     width: 600px; 
-    height: 380px;
+    height: 310px;
     border:  1px solid darkblue;
     border-radius: 5%;
 }
@@ -22,7 +22,7 @@
 }
 .message--2wiersz {
     width: 600px;
-    height: 200px;
+    height: 160px;
     display: flex;
     background-color: rgb(73, 65, 65);
 }
@@ -45,4 +45,14 @@
 .message--3wiersz div {
     margin-left: 60px;
     padding: 10px;
+}
+.message--1wiersz img:hover {
+    flex: auto;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid rgb(190, 190, 162);
+    background-color: rgb(190, 190, 162);
+    border-radius: 5%;
+
 }
