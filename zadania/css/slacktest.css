@@ -2,6 +2,8 @@
 .message {
     background-color: rgb(73, 65, 65);
     width: 600px; 
+    border:  1px solid darkblue;
+    border-radius: 5%;
 }
 .message--1wiersz {
     display: flex;
@@ -27,5 +29,17 @@
     background-color: rgb(73, 65, 65);
     color: antiquewhite;
     font-size: 20px;
+    padding: 10px;
+}
+.message--3wiersz {
+    display: flex;
+}
+.message--3wiersz  img {
+    flex: auto;
+    padding: 10px;
+    margin: 10px;
+}
+.message--3wiersz div {
+    margin-left: 60px;
     padding: 10px;
 }
