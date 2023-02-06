@@ -1,14 +1,18 @@
 * {border-collapse: collapse;}
+body { background-color: rgb(73, 65, 65);}
+h2 {
+    color: bisque;
+}
 .message {
     background-color: rgb(73, 65, 65);
     width: 650px; 
-   
-    border:  1px solid darkblue;
+    border:  1px solid bisque;
     border-radius: 5%;
 }
 .message--1wiersz {
     display: flex;
     flex-wrap: nowrap;
+    height: 65px;
 }
 .message--1wiersz img {
     flex: 1 1 10px;
@@ -16,6 +20,10 @@
     margin: 10px;
 
 }
+.message--1wiersz div {
+    flex: 1 1 10px;
+    margin-left: 10px;
+    padding: 10px; }
 
 .message--2wiersz { 
     display: flex;
@@ -32,11 +40,14 @@
     min-height: 80px;
     max-height: 80px*/
     resize: none;
-    outline-style:none
+    outline-style:none;
+    border: none;
 }
 .message--3wiersz {
     display: flex;
     flex-wrap: nowrap;
+    height: 65px;
+
     
 }
 .message--3wiersz img {
@@ -63,3 +74,4 @@
     background-color: rgb(190, 190, 162);
     border-radius: 5%;
 }
+
