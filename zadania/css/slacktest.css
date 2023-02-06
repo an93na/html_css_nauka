@@ -16,14 +16,10 @@
     margin: 10px;
 
 }
-.message--1wiersz div {
-    margin-left: 60px;
-    padding: 10px;
 
-}
 .message--2wiersz { 
     display: flex;
-    background-color: rgb(73, 65, 65);
+    flex-wrap: nowrap;
 }
 .message--2wiersz__text {
     flex: 1 1 25px;
@@ -36,22 +32,24 @@
     min-height: 80px;
     max-height: 80px*/
     resize: none;
+    outline-style:none
 }
 .message--3wiersz {
     display: flex;
+    flex-wrap: nowrap;
     
 }
 .message--3wiersz img {
     flex: 1 1 10px;
     padding: 10px;
     margin: 10px;
-    
 }
-/*.message--3wiersz  {
-    display: flex;
-    margin-left: 60px;
+
+.message--3wiersz div {
+    flex: 1 1 10px;
+    margin-left: 10px;
     padding: 10px; 
-}*/
+}
 .message--1wiersz img:hover {
     cursor: pointer;
     border: 1px solid rgb(190, 190, 162);
