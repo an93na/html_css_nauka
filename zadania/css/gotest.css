@@ -1,0 +1,30 @@
+* {box-sizing: border-box;}
+body {
+    background-image: url(../img/ksi.jpg);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [lewa1] repeat(4, 1fr) [prawa];
+    grid-template-rows:    [w0] repeat(4, 1fr) [w7];
+}
+h1 {
+    color: white;
+    position: relative;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    font-size: 56px;
+    text-align: center;
+
+}
+input { 
+    position: relative;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    font-size: 15px;
+    text-align: unset;
+    border-radius: 10%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+}
