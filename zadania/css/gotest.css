@@ -28,19 +28,35 @@ input {
     padding: 10px;
     margin: 10px;
 }
-a {
-    position: relative;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-}
+
+
 
 .container2 {
     grid-column: 2 / 4;
     grid-row: 4 / 5;
-    display: grid;
-    grid-template-columns: [lewa2] repeat(4, 1fr) [prawa2];
-    grid-template-rows:    [w1] repeat(2, 1fr) [w2];
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container2--pole1_obraz {
+    background-image: url(../img/cacek.jpg);
+    position: relative;
+    background-repeat-x: no-repeat;
+    background-size: 100% auto;
+    background-repeat-y: no-repeat;
+    background-position: center;
+    margin: 20px;
+    border-radius: 50px;
+    
+}
+a {
+    position: absolute;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: white;
+    text-decoration: none;
+    
 }
