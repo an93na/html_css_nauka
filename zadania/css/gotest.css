@@ -32,7 +32,9 @@ a {
     position: relative;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    
+    color: white;
+    text-decoration: none;
+    background-color: black;
 }
 
 .container2 {
