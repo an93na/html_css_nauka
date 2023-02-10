@@ -46,8 +46,13 @@ input {
     background-size: 100% auto;
     background-repeat-y: no-repeat;
     background-position: center;
-    margin: 20px;
-    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    grid-column: 2 /3;
+    grid-row: 4 / 5;
+    display: inline-block;
     
 }
 a {
