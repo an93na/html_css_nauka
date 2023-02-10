@@ -52,9 +52,9 @@ input {
     border-radius: 50%;
     grid-column: 2 /3;
     grid-row: 4 / 5;
-    display: inline-block;    
+    flex: auto;   
 }
-a {
+.container2 a {
     position: absolute;
     bottom: -40px;
     color: black;
@@ -62,7 +62,8 @@ a {
     background-color: rgba(277, 277, 277, 0.8);
     border-radius: 5%;
     padding: 5px;
-    margin: 5px;    
+    margin: 5px;  
+    flex: auto;  
 }
 .container3 {
     grid-column: 2 / 4;
@@ -85,7 +86,49 @@ a {
     height: 75px;
     margin: 10px;
     border-radius: 50%;
-    grid-column: 2 /3;
+    grid-column: 2 / 3;
     grid-row: 5 / 6;
-    display: inline-block;    
+    flex: auto;
+      
+}
+.container3 a {
+        position: absolute;
+        bottom: -40px;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(277, 277, 277, 0.8);
+        border-radius: 5%;
+        padding: 5px;
+        margin: 5px;
+}    
+.container4 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container4--lewyrog a {
+        text-align: left;
+        color: white;
+        text-decoration: none;
+        border-radius: 5%;
+        padding: 10px;
+        margin: 10px; 
+}
+a:hover {
+text-decoration: underline;
+background-color: rgba(277, 277, 277, 0.5);
+}
+
+.container2--pole1_obraz:hover {
+background-color: rgba(29, 5, 97, 0.8);
+cursor: pointer;
+}
+.container3--pole1_obraz:hover {
+background-color: rgba(29, 5, 97, 0.8);
+cursor: pointer;
 }
