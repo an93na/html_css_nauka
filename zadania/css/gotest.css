@@ -106,13 +106,10 @@ input {
     grid-row: 1 / 2;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
 }
 .container4--lewyrog a {
-        text-align: left;
+        text-align: right;
         color: white;
         text-decoration: none;
         border-radius: 5%;
