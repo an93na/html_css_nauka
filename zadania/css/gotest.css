@@ -52,8 +52,7 @@ input {
     border-radius: 50%;
     grid-column: 2 /3;
     grid-row: 4 / 5;
-    display: inline-block;
-    
+    display: inline-block;    
 }
 a {
     position: absolute;
@@ -63,9 +62,30 @@ a {
     background-color: rgba(277, 277, 277, 0.8);
     border-radius: 5%;
     padding: 5px;
-    margin: 5px;
-    
-    
-    
-    
+    margin: 5px;    
+}
+.container3 {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container3--pole1_obraz {
+    background-image: url(../img/cacek.jpg);
+    position: relative;
+    background-repeat-x: no-repeat;
+    background-size: 100% auto;
+    background-repeat-y: no-repeat;
+    background-position: center;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    border-radius: 50%;
+    grid-column: 2 /3;
+    grid-row: 5 / 6;
+    display: inline-block;    
 }
