@@ -6,7 +6,6 @@
     <title>Document - powtórka html</title>
   </head>
   <body>
-    
     <h1>nagłówek h1</h1>
     <h2>nagłówek h2</h2>
     <h3>nagłówek h3</h3>
@@ -14,7 +13,7 @@
     <h5>nagłówek h5</h5>
     <h6>nagłówek h6</h6>
     <p>paragraf</p>
-    
+
     <ul>
       <!-- list-style-type: disc -to mamy kropeczki,
       możemy to zmienić -->
@@ -22,19 +21,19 @@
       <li>Lista nieuporządkowana</li>
       <li>Lista nieuporządkowana</li>
     </ul>
-    
+
     <ol>
       <li>Lista uporządkowana</li>
       <li>Lista uporządkowana</li>
       <li>Lista uporządkowana</li>
     </ol>
-    
+
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid sed,
       facilis at distinctio cum molestias assumenda alias architecto sunt hic ut
       esse, ad inventore asperiores vero saepe a porro aperiam?
     </p>
-    
+
     <table>
       <caption>
         Tytuł danych
@@ -82,16 +81,34 @@
     <form action="index2.html">
       <!-- input pole do wprowadzania danych 
         jeśli jest typu text to możemy wpisywać tekst-->
-      <input type="text" name="imie" id=""> 
+      <input type="text" name="imie" id="" />
       <!-- typ submit umożliwia wysłanie danych, a gdzie to 
       określa atrybut action w formularzu -->
-      <input type="submit" name="" id="">
+      <input type="submit" name="" id="" />
+
+      <select name="etykieta" id="">
+        <!-- możliwość wyboru z listy tylko jednej rzeczy 
+        atrybut name jest to etykieta -->
+        <option value="" selected disabled>Wybierz opcje</option>
+        <!-- disabled używamy aby wyłączyć pewną opcję 
+            selected mówi że dana opcja jest wybrana. 
+            To jest atrybut bezwartości niektorzy 
+            zapisują to też jako selected="selected" -->
+        <option value="1">opcja1</option>
+        <option value="2">opcja2</option>
+        <option value="3">opcja3</option>
+      </select>
+
+      <select name="etykietaWiele" id="" multiple size="4">
+        <!-- multiple możliwość wyboru więcej niż jednej rzeczy 
+        size ile ma się pokazywać na stronie z tej listy-->
+        <option value="" selected disabled>Wybierz opcje</option>
+        <option value="1">opcja1</option>
+        <option value="2">opcja2</option>
+        <option value="3">opcja3</option>
+      </select>
+
+      
     </form>
-    <select name="" id="">
-      <!-- możliwość wyboru z listy tylko jednej rzeczy -->
-      <option value="1">opcja1</option>
-      <option value="2">opcja2</option>
-      <option value="3">opcja3</option>
-    </select>
   </body>
 </html>
