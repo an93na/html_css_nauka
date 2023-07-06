@@ -54,9 +54,16 @@ table[class="tab2"] {
 /* wszystkie elementy th tabeli o klasie tab1 mają mieć
 podkład żółty */
 table[class="tab1"] th {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 table[class="tab2"] th {
-    background-color: orange;
+  background-color: orange;
 }
+
+/* inny częściej spotykany format zapisu stylowania po
+klasach 
+.tab1 th {
+  background-color: yellow;
+}
+*/
