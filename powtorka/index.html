@@ -83,7 +83,10 @@
         jeśli jest typu text to możemy wpisywać tekst-->
       <input type="text" name="imie" id="" />
       <!-- typ submit umożliwia wysłanie danych, a gdzie to 
-      określa atrybut action w formularzu -->
+          określa atrybut action w formularzu -->
+
+      <!-- value wypełnia input jakimiś początkowymi danymi -->
+      <input type="text" name="secondName" id="" value="Agata" />
       <input type="submit" name="" id="" />
 
       <select name="etykieta" id="">
@@ -109,17 +112,64 @@
       </select>
 
       <!-- textarea umożliwia wprowadzanie tekstu wieloliniowego -->
-      <textarea name="komentarz" id=""></textarea>
+      <textarea name="komentarz" id="">Testowa wartość</textarea>
 
-      <!-- radio można wybrać tylko jedną opcję -->
-      <input type="radio" name="radio" id="">
-      <input type="radio" name="radio" id="">
-      <input type="radio" name="radio" id="">
-      
-      <!-- checkbox można wybrać więcej -->
-      <input type="checkbox" name="checkbox" id="">
-      <input type="checkbox" name="checkbox" id="">
-      <input type="checkbox" name="checkbox" id="">
+      <!-- radio można wybrać tylko jedną opcję 
+        jeśli jakiś radio jest zaznaczony to nie mogę go odznaczyć
+        wybór jednego radio wyłącza mi inny radio
+        te przyciski wykluczają się wzajemnie bo mają to samo name-->
+      <input type="radio" name="radio" id="" />
+      <input type="radio" name="radio" id="" />
+      <input type="radio" name="radio" id="" />
+
+      <!-- checkbox można wybrać więcej
+        można je zaznaczyć i odznaczyć klikając
+        można wybrać więcej opcji -->
+      <input type="checkbox" name="checkbox" id="" />
+      <input type="checkbox" name="checkbox" id="" />
+      <input type="checkbox" name="checkbox" id="" />
+
+      <!-- tutaj w password znaki są maskowane -->
+      <input type="password" name="password" id="" />
+
+      <!-- to pole ma istotne znaczenie przy zabezpieczaniu się przed
+      cssr 
+    ten hidden nigdy się nie wyświetla ale jest przechwywany w formuarzu -->
+      <input type="hidden" name="ukryte" id="" value="57" tabindex="1" />
+
+      <!-- accesskey pozwała bez klikania przejść do danego pola 
+        po kliknięciu lewego alta oraz i lub n-->
+      <input type="text" name="name" id="" accesskey="i" tabindex="3" />
+      <input type="text" name="surname" id="" accesskey="n" tabindex="2" />
+      <input
+        type="text"
+        name="age"
+        id=""
+        accesskey="w"
+        tabindex="4"
+        placeholder="pozwala na wyświetlenie w polu etykiety"
+      />
+      <!-- tabindex pozwala na niestandardowe przechodzenie między inputami przy pomocy
+    klikania tab. Po przeładowaniu strony trafiam do tabindex 1 i dalej -->
+
+      <!-- elementy mogą mieć atrybut id, ważne jest aby wartość 
+        tego id była unikalna. Nie mogę już powtórzyć tetj wartości
+        służy on do odnajdywania elementów po tych unikalnych id -->
+      <input type="text" name="" id="1" />
+      <input type="text" name="" id="2" class="klasa1" />
+      <input type="text" name="" id="3" class="klasa1 lkasa2" />
+      <!-- atrybut class nie musi być unikalna ale może sie powtóżyć
+             można dodawać więcej wartości tylko muszą one 
+             być oddzielone spacją
+             służy np do stylowania -->
+
+      <!-- label służy dodowania etykietki dla input
+          plus jeśli kliknę na tą etykietkę to przeniesie
+          mnie do tego pola do wypełnienia -->
+      <label for="fimie">imie</label>
+      <input type="text" name="" id="fimie" />
+      <label for="fnazwisko">nazwisko</label>
+      <input type="text" name="" id="fnazwisko" />
     </form>
   </body>
 </html>
