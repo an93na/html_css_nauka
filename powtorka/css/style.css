@@ -1,4 +1,4 @@
- /* w arkuszu styli piszemy selektory*/
+/* w arkuszu styli piszemy selektory*/
 
 /* nazwa znacznika i zmiana właściwości tego znacznika */
 body {
@@ -30,15 +30,33 @@ h2 {
 } */
 
 /* tutaj textarea musi być dzieckiem form */
-form > textarea[name="komentarz"]{
-    background-color: rgb(255, 127, 0);
+form > textarea[name="komentarz"] {
+  background-color: rgb(255, 127, 0);
 }
 
 /* przelądarka analizuje dokument od prawej strony do lewej 
 najpierw szuka textarea a potem p i gdy nie znajdzie żadnego
 textarea w p to przerywa wyszukiwanie
 */
-form > p > textarea[name="komentarz"]{
-    background-color: rgb(95, 157, 198);
+form > p > textarea[name="komentarz"] {
+  background-color: rgb(95, 157, 198);
 }
 
+/* stylowanie za pomocą klas */
+table[class="tab1"] {
+  background-color: greenyellow;
+}
+
+table[class="tab2"] {
+  background-color: bisque;
+}
+
+/* wszystkie elementy th tabeli o klasie tab1 mają mieć
+podkład żółty */
+table[class="tab1"] th {
+    background-color: yellow;
+}
+
+table[class="tab2"] th {
+    background-color: orange;
+}
