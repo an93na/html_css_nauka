@@ -1,4 +1,13 @@
 /* nazwa znacznika i zmiana właściwości tego znacznika */
 body {
-    background-color: darkgray;
+  background-color: darkgray;
+}
+
+h2 {
+  background-color: crimson;
+}
+
+/* stylowanie po id */
+[id="proz"] {
+  background-color: palevioletred;
 }
