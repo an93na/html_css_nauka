@@ -1,3 +1,5 @@
+ /* w arkuszu styli piszemy selektory*/
+
 /* nazwa znacznika i zmiana właściwości tego znacznika */
 body {
   background-color: darkgray;
@@ -11,3 +13,32 @@ h2 {
 [id="proz"] {
   background-color: palevioletred;
 }
+/* to samo co wyżej inaczej zapisane */
+/* #proz{
+    background-color: palevioletred;
+} */
+
+/* textarea z name komentarz będzie mieć daną właściwość */
+/* textarea[name="komentarz"]{
+    background-color: rgb(255, 127, 0);
+} */
+
+/* textarea będące w form i gdy jest spacja pomiędzy nimi
+ to może je łączyć dowolna relacja */
+/* form textarea[name="komentarz"]{
+    background-color: rgb(255, 127, 0);
+} */
+
+/* tutaj textarea musi być dzieckiem form */
+form > textarea[name="komentarz"]{
+    background-color: rgb(255, 127, 0);
+}
+
+/* przelądarka analizuje dokument od prawej strony do lewej 
+najpierw szuka textarea a potem p i gdy nie znajdzie żadnego
+textarea w p to przerywa wyszukiwanie
+*/
+form > p > textarea[name="komentarz"]{
+    background-color: rgb(95, 157, 198);
+}
+
