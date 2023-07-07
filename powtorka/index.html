@@ -230,9 +230,17 @@
     <!-- przykład strony z html entities https://freeformatter.com/html-entities.html -->
 
     <!-- a - anchor czyli ktwica dzięki niemu możemy tworzyć linki do stron 
-    href - link do strony a target - przejście do strony domyślą wartością jest _self co oznacza
+    href - link do strony, a target - przejście do strony domyślą wartością jest _self co oznacza
     że link otworzy się w bieżącej tabce. Jeżeli zmienimy to na _blank to otworzy nam się
-    to w nowej tabce. Za każdym razem będzie to nowa tabka-->
+    to w nowej tabce. Za każdym razem będzie to nowa tabka 
+    możemy też podać własna nazwę atrybutu target. I gdy mamy własna nazwę to ten link otwiera
+    mi się w nowej tabce ale tylko raz. Jeśli był on otwarty gdzieś to nowy link otwiera się
+    w tej samej tabce -->
     <a href="index2.html" target="_blank">Formularz</a>
+    <a href="index2.html" target="form">Formularz2</a>
+
+    <!-- gdy chcemy otowrzyć stronę która jest gdzieś w Internecie 
+    to trzeba napisać pełen adres do niej -->
+    <a href="https://www.onet.pl/" target="form">onet</a>
   </body>
 </html>
