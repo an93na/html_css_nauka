@@ -67,3 +67,8 @@ klasach
   background-color: yellow;
 }
 */
+
+/* definiowanie szerokości obrazków w dokumencie */
+img {
+  width: 100%;
+}
