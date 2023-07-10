@@ -78,7 +78,10 @@ body{
   margin: 0;
 }
 
-p span {
+.czerw {
   color: red;
   font-weight: bold
+}
+.ziel {
+  color: green;
 }

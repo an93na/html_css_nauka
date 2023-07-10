@@ -294,10 +294,18 @@
     <!-- znaczniki te stosuje się gdy chcemy np aby dany 
       fragment tekstu był innego koloru. Do tego idealnie
       nadaje się span -->
-    <p>wszystko co ważne piszemy na <span>czerwono</span></p>
+    <p><span class="ziel">wszystko co ważne piszemy na</span> <span class="czerw">czerwono</span></p>
     
-    
-    
+    <!-- to samo co wyżej tylko zamiast span to div. I widać,
+    że drugi div przenosi się do nowej lini. Każde wystąpienie
+    div przenosi nam rzeczy do nowej lini.  -->
+    <p><div class="ziel">wszystko co ważne piszemy na</div> <div class="czerw">czerwono</div></p>
+    <!-- różnica między div i span jest taka, że span nie wpływa na bieg textu
+    jest znacznikiem inlinowym natomiast div przenosi do nowej lini bo jest
+    znacznikiem blokowym. Znacznik blokowy zabiera 100% dostępnej powierzchni, natomiast 
+    znaczniki inlinowe zajmują tyle ile mają zawartości.
+    Znaczniki te przydają się do grupowania-->
+
     <!-- tutaj przenosi nas po kliknieciu na lokalny link-koniec -->
     <a name="koniec"></a>
   </body>
