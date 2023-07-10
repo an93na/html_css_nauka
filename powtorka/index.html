@@ -272,14 +272,32 @@
       <!--  w html obrazki zachowują się jak wyrazy więc
         międzynimi jest spacja dlatego te 4 tutaj mimo,
         powinny być 4 obok siebie bo to wynika ze styli 
-        (img {width: 25%;} body{margin: 0;}).
+        (img {width: 25%;} body{margin: 0;}) to ostatni obrazek
+        cały czas jest w nowej lini.
         HTML każde przeście do nowej lini traktuje jako odstęp(spacje) -->
       <img src="./img/1.jpg" alt="obrazek1" />
       <img src="./img/1.jpg" alt="obrazek1" />
       <img src="./img/1.jpg" alt="obrazek1" />
       <img src="./img/1.jpg" alt="obrazek1" />
     </p>
+    <p>
+      <!-- po usunięciu przejść do nowej lini te obrazki wyświetlają
+      się obok siebie
+      Jednak gdyby było więcej tych obrazków to byłby problem 
+      dlatego stosuje się flex i grid -->
+      <img src="./img/1.jpg" alt="obrazek1" /><img src="./img/1.jpg" alt="obrazek1" /><img src="./img/1.jpg" alt="obrazek1" /><img src="./img/1.jpg" alt="obrazek1" />
+    </p>
 
+    <!-- znaczniki niesemantyczne -->
+    <span>span: nie dostarczam żadnego znaczenia semantycznego tylko wyświetl to co jest we mnie</span>
+    <div>div: nie dostarczam żadnego znaczenia semantycznego tylko wyświetl to co jest we mnie</div>
+    <!-- znaczniki te stosuje się gdy chcemy np aby dany 
+      fragment tekstu był innego koloru. Do tego idealnie
+      nadaje się span -->
+    <p>wszystko co ważne piszemy na <span>czerwono</span></p>
+    
+    
+    
     <!-- tutaj przenosi nas po kliknieciu na lokalny link-koniec -->
     <a name="koniec"></a>
   </body>

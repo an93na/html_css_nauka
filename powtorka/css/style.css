@@ -77,3 +77,8 @@ img {
 body{
   margin: 0;
 }
+
+p span {
+  color: red;
+  font-weight: bold
+}
