@@ -18,16 +18,24 @@ th, td {
   border: 1px solid black;
   /* wyrównanie tekstu do lewej */
   text-align: left;
+  font-weight: normal;
+  padding: 10px;
 
 }
 
 tr {
     /* kolor tła */
-    background-color: rgb(251, 243, 187);
+    background-color: rgb(247, 244, 215);
+}
+
+/* dla każdego pażystego tr */
+tbody > tr:nth-child(odd) {
+    background-color: #fbbee5;
 }
 
 .naglowek {
-  background-color: #fbe3b3;
+  background-color: #be0994;
+  color: #ffffff;
 }
 
 caption {
@@ -37,4 +45,20 @@ caption {
     border-left: 1px solid black;
     /* obramowanie tylko prawe */
     border-right: 1px solid black;
+    padding: 10px;
+    /* rozmiar tekstu */
+    font-size: 20px;
+    /* obrazek pod elementem caption (jako tło) */
+    background-image: url(../img/mapa.png);
+    height: 100px;
+}
+
+/* hover gdy użytkownik najeżdża na jakiś element to zmienia się 
+styl tego elementu
+każdy tr który znajduje się w tbody jest dzieckiemtbody powinien
+dostać nowy zestaw właściwości */
+tbody > tr:hover {
+    /* rgba - rgb z alfa czyli przepuszczalność koloru */
+    background-color: rgba(242, 83, 89, 0.5);
+    font-size: 18px;
 }
