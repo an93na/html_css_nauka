@@ -28,6 +28,9 @@ tr {
     background-color: rgb(247, 244, 215);
 }
 
+td {
+    height: 45px;
+}
 /* dla każdego pażystego tr */
 tbody > tr:nth-child(odd) {
     background-color: #fbbee5;
@@ -61,4 +64,11 @@ tbody > tr:hover {
     /* rgba - rgb z alfa czyli przepuszczalność koloru */
     background-color: rgba(242, 83, 89, 0.5);
     font-size: 18px;
+}
+/* th co ma klasę o wartości m */
+th.m {
+    width: 150px;
+}
+th.t {
+    width: 50px;
 }
