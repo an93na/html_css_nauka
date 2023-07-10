@@ -70,5 +70,10 @@ klasach
 
 /* definiowanie szerokości obrazków w dokumencie */
 img {
-  width: 100%;
+  width: 25%;
+}
+/* em odowłuje się do rodzica, a rem do korzeni */
+
+body{
+  margin: 0;
 }

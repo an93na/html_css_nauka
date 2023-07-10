@@ -266,7 +266,19 @@
     <!-- dodawanie obrazka src to link do obrazka, gdzie on się znajduje
     alt dostarcza opisu tekstowego obrazka, to jest też informacja dla technologii
     wspomagających bo nie potrafią przeczytać one obrazka (np syntezator mowy) -->
-    <img src="./img/1.jpg" alt="obrazek1">
+    <img src="./img/1.jpg" alt="obrazek1" />
+
+    <p>
+      <!--  w html obrazki zachowują się jak wyrazy więc
+        międzynimi jest spacja dlatego te 4 tutaj mimo,
+        powinny być 4 obok siebie bo to wynika ze styli 
+        (img {width: 25%;} body{margin: 0;}).
+        HTML każde przeście do nowej lini traktuje jako odstęp(spacje) -->
+      <img src="./img/1.jpg" alt="obrazek1" />
+      <img src="./img/1.jpg" alt="obrazek1" />
+      <img src="./img/1.jpg" alt="obrazek1" />
+      <img src="./img/1.jpg" alt="obrazek1" />
+    </p>
 
     <!-- tutaj przenosi nas po kliknieciu na lokalny link-koniec -->
     <a name="koniec"></a>
