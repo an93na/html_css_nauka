@@ -1,3 +1,40 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  /* obwódka tabeli ma mieć 1px być ciąglą linią i być
+    koloru czarnego 
+    nagłówek się nie otacza bo on wyświetla się nad tabelą
+    to jest z gory narzucone*/
+  border: 1px solid black;
+  /* elementy mają się zapadać czyli żeby te linie 
+    obramowania były jedne w sensie żeby na siebe zachodziły */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  /* wyrównanie tekstu do lewej */
+  text-align: left;
+
+}
+
+tr {
+    /* kolor tła */
+    background-color: rgb(251, 243, 187);
+}
+
+.naglowek {
+  background-color: #fbe3b3;
+}
+
+caption {
+    /* obramowanie tylko górne */
+    border-top: 1px solid black;
+    /* obramowanie tylko lewe */
+    border-left: 1px solid black;
+    /* obramowanie tylko prawe */
+    border-right: 1px solid black;
 }
