@@ -74,7 +74,7 @@ img {
 }
 /* em odowłuje się do rodzica, a rem do korzeni */
 
-body{
+.pobrazki {
   margin: 0;
 }
 
@@ -85,3 +85,13 @@ body{
 .ziel {
   color: green;
 }
+
+/* gwiazdka oznacza wszytskim elementom, a ten box-sizing:border-box
+  daje nam możliwośc modyfikacji borderów i panddingów bez martwienia
+  się o to że coś nam wyjedzie poza body (pojawi się taki suwak na dole */
+* {
+  box-sizing: border-box;
+}
+
+/* każdy element w dokumencie ma model pudełkowy czyli margin border i padding
+ */
