@@ -1,0 +1,6 @@
+* {
+    border-collapse: collapse;
+}
+.nadrzedny {
+    border: 1px solid red;
+}
