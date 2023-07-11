@@ -1,6 +1,32 @@
 * {
-    border-collapse: collapse;
+  box-sizing: border-box;
 }
 .nadrzedny {
-    border: 1px solid red;
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+.wiersz1 {
+  background-color: bisque;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.wiersz2a {
+  background-color: darksalmon;
+  border: 1px solid black;
+  border-collapse: collapse;
+  display: inline-block;
+  width: 50%;
+}
+.wiersz2b {
+  background-color: darksalmon;
+  border: 1px solid black;
+  border-collapse: collapse;
+  display: inline-block;
+  width: 50%;
+}
+.wiersz3a {
+}
+.wiersz3b {
+}
+.wiersz3c {
 }
