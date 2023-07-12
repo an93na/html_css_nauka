@@ -5,35 +5,42 @@
 table {
   width: 100%;
   /* obwódka tabeli ma mieć 1px być ciąglą linią i być
-    koloru czarnego 
-    nagłówek się nie otacza bo on wyświetla się nad tabelą
-    to jest z gory narzucone*/
+  koloru czarnego 
+  nagłówek się nie otacza bo on wyświetla się nad tabelą
+  to jest z gory narzucone*/
   border: 1px solid black;
   /* elementy mają się zapadać czyli żeby te linie 
-    obramowania były jedne w sensie żeby na siebe zachodziły */
+  obramowania były jedne w sensie żeby na siebe zachodziły */
   border-collapse: collapse;
+  /* font-family możliwość zmiany fontu
+   fonty szeryfowe ze zdobieniami na dole
+    fonty bezszeryfowe uproszczone bez zdobień 
+    po przecinku są fonty które wyświetlają się użytkownikowi
+    gdyby nie miał fontu pierwszego. 
+    */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-th, td {
+th,
+td {
   border: 1px solid black;
   /* wyrównanie tekstu do lewej */
   text-align: left;
   font-weight: normal;
   padding: 10px;
-
 }
 
 tr {
-    /* kolor tła */
-    background-color: rgb(247, 244, 215);
+  /* kolor tła */
+  background-color: rgb(247, 244, 215);
 }
 
 td {
-    height: 45px;
+  height: 45px;
 }
 /* dla każdego pażystego tr */
 tbody > tr:nth-child(odd) {
-    background-color: #fbbee5;
+  background-color: #fbbee5;
 }
 
 .naglowek {
@@ -42,18 +49,18 @@ tbody > tr:nth-child(odd) {
 }
 
 caption {
-    /* obramowanie tylko górne */
-    border-top: 1px solid black;
-    /* obramowanie tylko lewe */
-    border-left: 1px solid black;
-    /* obramowanie tylko prawe */
-    border-right: 1px solid black;
-    padding: 10px;
-    /* rozmiar tekstu */
-    font-size: 20px;
-    /* obrazek pod elementem caption (jako tło) */
-    background-image: url(../img/mapa.png);
-    height: 100px;
+  /* obramowanie tylko górne */
+  border-top: 1px solid black;
+  /* obramowanie tylko lewe */
+  border-left: 1px solid black;
+  /* obramowanie tylko prawe */
+  border-right: 1px solid black;
+  padding: 10px;
+  /* rozmiar tekstu */
+  font-size: 20px;
+  /* obrazek pod elementem caption (jako tło) */
+  background-image: url(../img/mapa.png);
+  height: 100px;
 }
 
 /* hover gdy użytkownik najeżdża na jakiś element to zmienia się 
@@ -61,14 +68,14 @@ styl tego elementu
 każdy tr który znajduje się w tbody jest dzieckiemtbody powinien
 dostać nowy zestaw właściwości */
 tbody > tr:hover {
-    /* rgba - rgb z alfa czyli przepuszczalność koloru */
-    background-color: rgba(242, 83, 89, 0.5);
-    font-size: 18px;
+  /* rgba - rgb z alfa czyli przepuszczalność koloru */
+  background-color: rgba(242, 83, 89, 0.5);
+  font-size: 18px;
 }
 /* th co ma klasę o wartości m */
 th.m {
-    width: 150px;
+  width: 150px;
 }
 th.t {
-    width: 50px;
+  width: 50px;
 }
