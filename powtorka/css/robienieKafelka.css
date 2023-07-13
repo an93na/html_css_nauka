@@ -12,9 +12,24 @@ width: 50%; /*szerokość 50% kontenera nadrzędnego*/
 }
 
 .kafelek--tytul{
+font-size: 20p /*20 punktów*/;
+font-weight: bold;
+color: whitesmoke;
+text-decoration: none;
+padding: 10px;
+}
 
+.kafelek--tytul:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .kafelek--wprowadzenie{
 
 }
+
+/* bem 
+mamy jakąś strukturę i mamy jakiś element
+i nazywamy go i tutaj pierwszy jest nazwa ogólna
+a potem poszczególne elementy z nazwą tego bloku 
+na początku. */
