@@ -5,7 +5,10 @@
 }
 
 .kafelek--nadtytul{
-
+background-color: rgb(197, 38, 38);
+color: white;
+padding: 10px;
+width: 50%; /*szerokość 50% kontenera nadrzędnego*/
 }
 
 .kafelek--tytul{
@@ -13,5 +16,5 @@
 }
 
 .kafelek--wprowadzenie{
-    
+
 }
