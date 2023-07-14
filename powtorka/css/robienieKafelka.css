@@ -9,6 +9,9 @@ background-color: rgb(197, 38, 38);
 color: white;
 padding: 10px;
 width: 50%; /*szerokość 50% kontenera nadrzędnego*/
+position: relative;
+top: 10px;
+right: -10px;
 }
 
 .kafelek--tytul{
@@ -25,7 +28,10 @@ padding: 10px;
 }
 
 .kafelek--wprowadzenie{
-
+    color: black;
+    font-weight: normal;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* bem 
@@ -33,3 +39,21 @@ mamy jakąś strukturę i mamy jakiś element
 i nazywamy go i tutaj pierwszy jest nazwa ogólna
 a potem poszczególne elementy z nazwą tego bloku 
 na początku. */
+
+/*
+Domyślnie wszystkie elementy mają position static
+position  - służy do wytrącenia elementów z jego
+normalnego biegu 
+jeżeli mamy position relative to możemy przemieszczać 
+ten element musimy użyć do tego position releativ jeszcze
+top bottom right left. np 
+position: relative;
+top: 10px; mówi wyświetl się z danym offsetem zadanego kierunku
+te offset jest względem tego miejsca gdzie by się naturalnie wyświetlił.
+Ile należy przenieśc ten element punktów w dół względem pozycji którą miał 
+wcześniej.
+pozycjonowanie fixed mówi wyświetl się z takim offsetem względem krawędzi ekranu. 
+To pozycjonowanie całkowicie wyrywa element z dokumentu
+ten element stoi nam w pewnym położeniu mimo że my przesuwamy kafelek na dół.
+Np menu żeby było cały czas widoczne
+ */
