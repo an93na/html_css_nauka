@@ -2,6 +2,10 @@
     background-image: url('../img/gacek.jpg');
     width: 300px;
     height: 200px;
+    position: relative; 
+    /* samo napiasanie tego nie powoduje żadnej zmiany, dopiero jeśli 
+    jakies elementy absolute będą się w nim znajdować to 
+    wtedy będzie coś się dziać. Chyba że damy jakies top left itd */
 }
 
 .kafelek--nadtytul{
@@ -9,9 +13,7 @@ background-color: rgb(197, 38, 38);
 color: white;
 padding: 10px;
 width: 50%; /*szerokość 50% kontenera nadrzędnego*/
-position: relative;
-top: 10px;
-right: -10px;
+position: absolute;
 }
 
 .kafelek--tytul{
@@ -20,6 +22,7 @@ font-weight: bold;
 color: whitesmoke;
 text-decoration: none;
 padding: 10px;
+position: absolute;
 }
 
 .kafelek--tytul:hover{
@@ -32,6 +35,7 @@ padding: 10px;
     font-weight: normal;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
 }
 
 /* bem 
@@ -56,4 +60,6 @@ pozycjonowanie fixed mówi wyświetl się z takim offsetem względem krawędzi e
 To pozycjonowanie całkowicie wyrywa element z dokumentu
 ten element stoi nam w pewnym położeniu mimo że my przesuwamy kafelek na dół.
 Np menu żeby było cały czas widoczne
+Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
+
  */
