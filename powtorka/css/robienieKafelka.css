@@ -14,7 +14,9 @@
     /* wpływamy na rozmiar pojedyńczego obrazka z background 
         chce żeby mój obrazek był dopasowany do szerokości*/
     background-size: 100% auto;
-
+    /* możemy wycentorować nasz obrazek przeuwać jego środek */
+    background-position-y: 50%;
+    margin: 20px;
 }
 
 .kafelek--nadtytul{
