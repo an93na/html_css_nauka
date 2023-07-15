@@ -1,70 +1,76 @@
 .kafelek {
-    display: inline-block;
-    background-image: url('../img/gacek.jpg');
-    width: 300px;
-    height: 200px;
-    position: relative; 
-    /* samo napiasanie tego nie powoduje żadnej zmiany, dopiero jeśli 
+  background-image: url("../img/gacek.jpg");
+  width: 300px;
+  height: 200px;
+  position: relative;
+  /* samo napiasanie tego nie powoduje żadnej zmiany, dopiero jeśli 
     jakies elementy absolute będą się w nim znajdować to 
     wtedy będzie coś się dziać. Chyba że damy jakies top left itd */
 
-    /* rozciąganie do zadanej szerokości żeby nasz obrazek sie nie powielał */
-    /* niepowtarzaj tła */
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    /* wpływamy na rozmiar pojedyńczego obrazka z background 
+  /* rozciąganie do zadanej szerokości żeby nasz obrazek sie nie powielał */
+  /* niepowtarzaj tła */
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  /* wpływamy na rozmiar pojedyńczego obrazka z background 
         chce żeby mój obrazek był dopasowany do szerokości*/
-    background-size: 100% auto;
-    /* możemy wycentorować nasz obrazek przeuwać jego środek */
-    background-position-y: 50%;
-    margin: 20px;
+  background-size: 100% auto;
+  /* możemy wycentorować nasz obrazek przeuwać jego środek */
+  background-position-y: 50%;
+  margin: 20px;
 }
 
-.kafelek--nadtytul{
-background-color: rgb(197, 38, 38);
-color: white;
-padding: 10px;
-width: 50%; /*szerokość 50% kontenera nadrzędnego*/
-position: absolute;
-bottom: 80px;
-left: 20px;
+.kafelek__kot {
+  background-image: url("../img/1.jpg");
+}
+.kafelek__duzy {
+  width: 450px;
 }
 
-.kafelek--tytul{
-font-size: 20p /*20 punktów*/;
-font-weight: bold;
-color: whitesmoke;
-text-decoration: none;
-padding: 10px;
-position: absolute;
-left: 20px;
-bottom: 45px;
+.kafelek--nadtytul {
+  background-color: rgb(197, 38, 38);
+  color: white;
+  padding: 10px;
+  width: 50%; /*szerokość 50% kontenera nadrzędnego*/
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+}
+
+.kafelek--tytul {
+  font-size: 20p /*20 punktów*/;
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  bottom: 45px;
 }
 
 /* jesli są dwa podkreślenia to 
 sygnalizujemy że to jest odmiana
 tego orginalnego tytułu. Musi wystąpić 
 nazwa bloku i nazwa elemntu*/
-.kafelek--tytul__odmiana{
-color: rgb(200, 31, 31);
+.kafelek--tytul__odmiana {
+  color: rgb(200, 31, 31);
 }
 
-.kafelek--tytul:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.kafelek--tytul:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.kafelek--wprowadzenie{
-    color: black;
-    font-weight: normal;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.4);
-    position: absolute;
-    bottom: 5px;
-    left: 25px;
-    right: 25px;
-    margin-bottom: 0px;
-    font-weight: bold;
+.kafelek--wprowadzenie {
+  color: black;
+  font-weight: normal;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+  right: 25px;
+  margin-bottom: 0px;
+  font-weight: bold;
 }
 
 /* bem 
