@@ -6,6 +6,10 @@
     /* samo napiasanie tego nie powoduje żadnej zmiany, dopiero jeśli 
     jakies elementy absolute będą się w nim znajdować to 
     wtedy będzie coś się dziać. Chyba że damy jakies top left itd */
+
+    /* rozciąganie do zadanej szerokości żeby nasz obrazek sie nie powielał */
+    /* niepowtarzaj tła */
+    background-repeat: no-repeat;
 }
 
 .kafelek--nadtytul{
