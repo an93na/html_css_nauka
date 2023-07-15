@@ -9,7 +9,12 @@
 
     /* rozciąganie do zadanej szerokości żeby nasz obrazek sie nie powielał */
     /* niepowtarzaj tła */
-    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    /* wpływamy na rozmiar pojedyńczego obrazka z background 
+        chce żeby mój obrazek był dopasowany do szerokości*/
+    background-size: 100% auto;
+
 }
 
 .kafelek--nadtytul{
