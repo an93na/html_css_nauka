@@ -29,6 +29,14 @@ left: 20px;
 bottom: 45px;
 }
 
+/* jesli są dwa podkreślenia to 
+sygnalizujemy że to jest odmiana
+tego orginalnego tytułu. Musi wystąpić 
+nazwa bloku i nazwa elemntu*/
+.kafelek--tytul__odmiana{
+color: rgb(200, 31, 31);
+}
+
 .kafelek--tytul:hover{
     text-decoration: underline;
     cursor: pointer;
