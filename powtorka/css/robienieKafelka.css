@@ -118,4 +118,4 @@ Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
   /*siadki poziome*/
   grid-template-rows: [gorastart] 100px [gorastop dolstart] auto [dolstop];
 }
-/* dwie nazwy w nawiasie oznaczają tą samą linię ale te nazwy można używać wymiennie */
+/* dwie nazwy w nawiasie oznaczają tą samą linię np [lewastop zajawkistart] ale te nazwy można używać wymiennie */
