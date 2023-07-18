@@ -146,3 +146,11 @@ Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
   background-color: bisque;
   
 }
+
+.menu > a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-weight: normal;
+  color: black;
+}
