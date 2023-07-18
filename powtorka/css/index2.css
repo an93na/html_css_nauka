@@ -35,3 +35,7 @@ table {
 td:nth-last-child(1) {
     background-color: aqua;
 }
+
+.tab3 {
+  width: 500px;
+}
