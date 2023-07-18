@@ -109,6 +109,12 @@ Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
     jesli się nie mieszczą */
   flex-wrap: wrap;
   /* możemy też sterować biegiem elemetów dzieki flex-direction */
+
+  /* młówimy żeby ustawił się pomiędzy kolejnymi liniami siadki */
+  /* chciałabym aby ten element został umieszczony pomiędzy liniami 
+  kolumn */
+  grid-column: zajawkistart / zajawkistop;
+  grid-row: dolstart / dolstop;
 }
 
 .maingrid {
@@ -116,6 +122,6 @@ Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
   /*siadki pionowe: [nazwa najbardziej wysuniętej na lewo siadki] odstęp między liniami siadki [klejna siadka] */
   grid-template-columns: [lewastart] 100px [lewastop zajawkistart] auto [zajawkistop prawastart] 200px [prawastop];
   /*siadki poziome*/
-  grid-template-rows: [gorastart] 100px [gorastop dolstart] 200px [dolstop];
+  grid-template-rows: [gorastart] 100px [gorastop dolstart] auto [dolstop];
 }
 /* dwie nazwy w nawiasie oznaczają tą samą linię np [lewastop zajawkistart] ale te nazwy można używać wymiennie */
