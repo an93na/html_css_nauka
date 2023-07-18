@@ -138,8 +138,11 @@ Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
 }
 
 .menu{
-  grid-column: prawastart / prawastop;
-  grid-row: dolstart/artykulstop;
+  height: 100px;
+  width: 200px;
+  position: fixed;
+  top: 100px;
+  right: 10px;
   background-color: bisque;
   
 }
