@@ -136,3 +136,10 @@ Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
   grid-column: zajawkistart / zajawkistop;
   grid-row: artykulstart/artykulstop;
 }
+
+.menu{
+  grid-column: prawastart / prawastop;
+  grid-row: dolstart/artykulstop;
+  background-color: bisque;
+  
+}
