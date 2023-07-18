@@ -154,3 +154,11 @@ Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
   font-weight: normal;
   color: black;
 }
+
+.menu > a:hover {
+  display: block;
+  background-color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
