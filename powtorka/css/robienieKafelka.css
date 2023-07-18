@@ -138,8 +138,8 @@ Position relative nie zwalnia swojego miejsca w orginalnym miejscu w dokumencie
 }
 
 .menu{
-  height: 100px;
-  width: 200px;
+  height: 80px;
+  width: 100px;
   position: fixed;
   top: 100px;
   right: 10px;
